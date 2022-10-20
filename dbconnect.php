@@ -5,7 +5,7 @@
 try {
 
   $pdo = new PDO(
-    'mysql:dbname=php-simple-kakeibo-template;host=localhost;charset=utf8mb4',
+    'mysql:dbname=php-kakeibo;host=localhost;charset=utf8mb4',
     'root',
     '',
     [
