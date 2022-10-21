@@ -58,6 +58,7 @@
     </header>
 
     <form class="m-5" action="./update.php" method="POST">
+      <input type="hidden" name="id" value="<?php echo $id; ?>">
       <p class="alert alert-success" role="alert">編集フォーム</p>
       <div class="form-group">
         <label for="date">日付</label>
