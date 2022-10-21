@@ -9,10 +9,11 @@
     $sql = "DELETE FROM records WHERE id = :id";
 
     $stmt = $pdo->prepare($sql);
-    $stmt->bindParam(':id', $id, POD::PARAM_INT);
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
     $stmt->execute();
 
-    
+    header('Location: ./index.php');
+    exit;
 
 
 
